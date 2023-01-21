@@ -1,0 +1,20 @@
+.app-container {
+  padding: 1rem 2rem;
+}
+
+.middle-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.weblog-text {
+  color: blue;
+}
+
+.hr {
+  height: 1px;
+  background-color: #000;
+  flex: 1;
+}

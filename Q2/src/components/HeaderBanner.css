@@ -1,0 +1,8 @@
+.header-banner-container {
+  /* display: flex;
+  flex-direction: row;
+  background-color: aqua;
+  padding: 1rem; */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}

@@ -1,0 +1,21 @@
+.signup-container {
+  background-color: rgb(91, 91, 255);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.signup-text {
+  text-align: center;
+}
+
+.signup-button {
+  background-color: rgb(1, 1, 170);
+  color: #fff;
+  padding: 0.25rem;
+  border: none;
+}
