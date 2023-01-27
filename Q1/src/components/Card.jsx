@@ -1,5 +1,6 @@
 import "./Card.css";
-const Card = ({ name, price, quantity, img }) => {
+
+const Card = ({ name, price, img, count, onChangeCounte }) => {
   return (
     <div className="card">
       <div className="card-img-info">
@@ -11,13 +12,17 @@ const Card = ({ name, price, quantity, img }) => {
           <p className="food-price"> {price} تومان</p>
 
           <div className="food-quantity">
-            <p className="operator">+</p>
-            <p>{quantity}</p>
-            <p className="operator">-</p>
+            <p className="operator" onClick={() => onChangeCounte(name, true)}>
+              +
+            </p>
+            <p>{count}</p>
+            <p className="operator" onClick={() => onChangeCounte(name, false)}>
+              -
+            </p>
           </div>
         </div>
       </div>
-      <p className="card-total-price">{price * quantity} تومان</p>
+      <p className="card-total-price">{price * count} تومان</p>
     </div>
   );
 };
